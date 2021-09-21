@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>formulaire</title>
+	<style type="text/css">
+		table
+		{
+			border:1px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body bgcolor="#90ee90">
+	<center>
+		<form action="bravo.html">
+			<table width="768">
+				<tr>
+					<td>
+						<center>
+							<h1>pique-nique de fin d'année</h1>
+							<p>inscription</p>
+						</center>
+					</td>
+				</tr>
+			</table>
+			<br><br>
+			<table width="768">
+				<tr>
+					<td><p style="text-align: right;"> nom prénom: &nbsp; </p></td>
+					<td><input type="text" name="t1"></td>
+					<td rowspan="4" width="250"><img src="img.jpg" width="250"></td>
+				</tr>
+				<tr>
+					<td><p style="text-align: right;">ma classe : &nbsp;</p></td>
+					<td><select>
+					<option value="none"> </option>
+					<option value="sisr">bts sio sisr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					<option value="slam">bts sio slam</option>
+					<option value="autre">autre</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><p style="text-align: right;">mon email : &nbsp;</p></td>
+					<td><input type="text" name="t3"></td>
+				</tr>
+				<tr>
+					<td><p style="text-align: right;">mon mot de passe : &nbsp;</p></td>
+					<td><input type="password" name="t4"></td>
+				</tr>
+			</table>
+			<br><br>
+						<table width="768">
+				<tr>
+					<td><p style="text-align: right;"> mes disponibillités : &nbsp; </p></td>
+					<td><input type="checkbox" name="c1">Lundi 10 juin</td>
+					<td><input type="checkbox" name="c2">Mardi 11 juin</td>
+					<td><input type="checkbox" name="c3">Mercredi 12 juin</td>
+				</tr>
+				<tr>
+					<td><p style="text-align: right;"> j'apporterai...&nbsp; </td>
+					<td><input type="radio" name="r1">une entrée</td>
+					<td><input type="radio" name="r1">un plat</td>
+					<td><input type="radio" name="r1">un dessert</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<p>je laisse un message (facultatif) :</p>
+						<textarea rows="4" cols="90" placeholder="Maximum 160 caractères !"></textarea>
+					</td>
+				</tr>
+			</table>
+			<input type="submit" name="sub" value="je m'inscris">
+			<input type="reset" name="re" value="je reinitialise le formulaire">
+		</form>
+	</center>
+</body>
+</html>
