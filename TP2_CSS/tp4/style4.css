@@ -1,0 +1,45 @@
+td
+{
+	border: 2px solid blue;
+}
+h1
+{
+	text-align: center;
+	font-size: 2rem;
+	color: blue;
+}
+table
+{
+	border: 2px solid blue;
+	margin: auto;
+}
+.nou
+{
+	background-color: #90aaea;
+	text-align: center;
+	font-size: 1rem;
+	color: blue;
+}
+.fra
+{
+	background: url(france.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 250px;
+	height: 100px;
+	text-align: center;
+}
+.all
+{
+	width: 800px;
+	text-align: center;
+}
+.usa
+{
+	background-image: url(usa.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 250px;
+	height: 150px;
+	text-align: center;
+}

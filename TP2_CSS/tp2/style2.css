@@ -1,0 +1,27 @@
+div
+{
+	border:2px solid #0000ff; 
+	border-radius: 8px;
+	padding-bottom: 1%;
+	padding-left: 1.5%;
+}
+article
+{
+	border:2px solid #e1e4ff; 
+	border-radius: 8px;
+	width: 97%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.he1
+{
+	font-size: 2rem;
+}
+
+.artimp
+{
+	background-color: #f49090;
+}
