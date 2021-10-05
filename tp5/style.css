@@ -1,0 +1,77 @@
+div
+{
+	border: 2px solid;
+}
+.full
+{
+	border-color: #0098ff;
+	width: 95%;
+	height: 950px;
+	padding-bottom: 5px;
+	margin: auto;
+}
+.head
+{
+	margin-top: 5px;
+	border-color: magenta;
+	width: 98.7%;
+	margin-left: 0.5%;
+	height: 200px;
+	margin-bottom: 10px;
+}
+.sep
+{
+	border: 0px solid;
+	background-color: #dddddd;
+}
+.img
+{
+	float: right;
+	text-align: justify;
+	border: 0px solid;
+	margin-top: ;
+	margin-right: 1%;
+	width: 130px;
+	height: 130px;
+}
+.forma
+{
+	border: 1px solid;
+	margin-left: 0.5%;
+	margin-right: 0.5% ;
+	width: 99%;
+	float: left;
+	margin-bottom: 1%;
+}
+h1
+{
+	font-size: 20px;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.txt
+{
+	border: 0px solid;
+	float: left;
+	width: 20%;
+	padding-left: 1%;
+}
+.tt
+{ 
+	width: 40%;
+}
+.info
+{
+	float: left;
+	border: 0px solid;
+	margin-top: 1%;
+	margin-left: 1%;
+	text-align: justify;
+	width: 40%;
+	height: 150px;
+}
+
+.pres
+{
+	text-align: right;
+}
