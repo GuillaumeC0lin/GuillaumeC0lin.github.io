@@ -1,0 +1,192 @@
+body
+{
+	background-image: url(b3.png);
+	background-position: top left, left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Verdana, Calibri, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+nav > ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+nav li
+{
+	list-style-type: none;
+}
+nav > ul > li
+{
+	float: left;
+	position: relative;
+}
+.submenu
+{
+	display: none;
+}
+nav input[type=checkbox]
+{
+	display: none;
+}
+.menu-mobile
+{
+	display: none;
+}
+nav
+{
+	width: 100%;
+	background-color: #424558;
+}
+nav > ul::after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+nav a
+{
+	display: inline-block;
+	text-decoration: none;
+}
+nav > ul > li > a
+{
+	padding: 20px 30px;
+	color: #FFF;
+}
+nav li:hover .submenu
+{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+.submenu li
+{
+	border-bottom: 1px solid #CCC;
+}
+.submenu li a
+{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px;
+}
+.menu-html:hover
+{
+	border-top: 5px solid #e44d26;
+	background-color: rgba(228, 77, 38, 0.15);
+}
+.menu-iframe:hover
+{
+	border-top: 5px solid #0070bb;
+	background-color: rgba(000, 112, 192, 0.15);
+}
+.menu-css:hover
+{
+	border-top: 5px solid #f1dc4f;
+	background-color: rgba(241, 211, 79, 0.15);
+}
+.menu-menu:hover
+{
+	border-top: 5px solid rgb(50, 250, 160);
+	background-color: rgba(50, 250, 160,0.15);
+}
+.menu-cv:hover
+{
+	border-top: 5px solid rgb(130, 190, 75);
+	background-color: rgba(130, 190, 75,0.15);
+}
+nav > ul > li:hover a
+{
+	padding: 15px 30px 20px 30px;
+}
+.menu-html .submenu
+{
+	background-color: #e66428;
+}
+.menu-iframe .submenu
+{
+	background-color: #00a0f0;
+}
+.menu-css .submenu
+{
+	background-color: #fbd863;
+}
+.menu-menu .submenu
+{
+	background-color: rgb(50, 250, 160);
+}
+.menu-cv .submenu
+{
+	background-color: rgb(160, 220, 105);
+}
+
+.submenu li:hover
+{
+	color: #EEE;
+	font-weight: bold;
+}
+.menu-html .submenu li:hover
+{
+	background-color: rgb(210, 77, 60);
+}
+.menu-iframe .submenu li:hover
+{
+	background-color: rgb(000, 115, 200);
+}
+.menu-css .submenu li:hover
+{
+	background-color: rgb(200, 165, 75);
+}
+.menu-menu .submenu li:hover
+{
+	background-color: rgb(10, 220, 120);
+}
+.menu-cv .submenu li:hover
+{
+	background-color: rgb(130, 190, 75);
+}
+nav input[type=checkbox]:checked ~ ul
+{
+	display: block;
+}
+
+@media screen and (max-width : 680px)
+{
+	.menu-mobile
+	{
+		display: block;
+		color: #fff;
+		background-color: rgba(29, 197, 151, 0.97);
+		text-align: center;
+		padding: 12px 0;
+	}
+	nav ul
+	{
+		display: none;
+	}
+
+	nav ul
+	{
+		display: none;
+	}
+	nav ul li, nav ul li a 
+	{
+		width: 100%;
+		text-align: center;
+		padding-left:0px ;
+	}
+	nav ul li a, nav ul li:hover a
+	{
+		padding: 10px 0px 10px 0px;
+	}
+	nav li:hover .submenu
+	{
+		display: block;
+		position: static;
+	}
+}

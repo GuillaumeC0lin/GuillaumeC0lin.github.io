@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>presentation des metiers informatiques</title>
-		<link rel="stylesheet" type="text/css" href="styleindex.css">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale">
+		<title>Menu responsive déroulant HTML / CSS</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<h1 class="maintitle">Sommaire:</h1>
 		<nav>
-			<div class="borderlabel">
-				<label>site 1</label>
-				<ul>
-					<li><a href="site1/p1.html">Développeur Web(design/backend)</a></li>
-					<li><a href="site1/p2.html">developpeur application</a></li>
-					<li><a href="site1/p3.html">administrateur réseau</a></li>
-					<li><a href="site1/p4.html">gestionnaire de base de donnés</a></li>
-					<li><a href="site1/form.html">formulaire</a></li>
-				</ul>
-			</div>
-			<div class="borderlabel">
-				<label>site 2</label>
-				<ul>
-					<li><a href="tp_iframe/index.html">tp i-frame</a></li>
-				</ul>
-			</div>
-			<div class="borderlabel">
-				<label>site 3</label>
-				<ul>
+			<label for="menu-mobile" class="menu-mobile">Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button">
+			<ul>
+				<li class="menu-html"><a href="#">HTML</a>
+					<ul class="submenu">
+						<li><a href="site1/p1.html">Développeur Web (design / backend)</a></li>
+						<li><a href="site1/p2.html">developpeur application</a></li>
+						<li><a href="site1/p3.html">administrateur réseau</a></li>
+						<li><a href="site1/p4.html">gestionnaire de base de donnés</a></li>
+						<li><a href="site1/form.html">formulaire</a></li>
+					</ul>
+				</li>
+					<li class="menu-iframe"><a href="#">iframe</a>
+					<ul class="submenu">
+						<li><a href="tp_iframe/index.html">tp i-frame</a></li>
+					</ul>
+				</li>	
+				<li class="menu-css"><a href="#">tp css</a>
+					<ul class="submenu">
 					<li><a href="TP2_CSS/index.html">tp css</a></li>
-				</ul>
-			</div>
-						<div class="borderlabel">
-			<label>tp CV</label>
-				<ul>
-					<li><a href="tp5/cv.html">tp cv</a></li>
-				</ul>
-			</div>
+					</ul>
+				</li>
+				<li class="menu-menu"><a href="#">tp menu</a>
+					<ul class="submenu">
+					<li><a href="tpmenu/menu.html">tp menu</a></li>
+					</ul>
+				</li>	
+				<li class="menu-cv"><a href="#">tp cv</a>
+					<ul class="submenu">
+					<li><a href="tp5/cv.html">CV HTML</a></li>
+					</ul>
+				</li>
+			</ul>
 		</nav>
 	</body>
+
 </html>
