@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="ex3.css">
+	<meta charset="utf-8">
+	<title></title>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+	function fun1()
+	{
+		var note1 = Number(prompt("donnez note n°1"));
+		var note2 = Number(prompt("donnez note n°2"));
+		var note3 = Number(prompt("donnez note n°3"));
+		var somme = 2*note1+2*note2+3*note3;
+		var res = (2*note1+2*note2+3*note3)/7;
+		if(res >= 10)
+		{
+			document.write("élève admis<br>");
+			document.bgColor="green";
+		}
+		else if (res>=8)
+		{
+			document.write("élève au ratrapage<br>");
+			document.bgColor="orange";
+		}
+		else
+		{
+			document.write("élève redoublant<br>");
+			document.bgColor="red";
+		}
+		document.write("<table><tr><td style=\"border: 2px solid black;\">"+"voila la somme "+somme+"</td><td style=\"border: 2px solid black;\">"+" et voila la moyenne "+res+"</td></tr></table>");
+	}
+
+	function fun2()
+	{
+		var nom = prompt("donnez votre nom");
+		var prenom = prompt("donnez votre prenom");
+		document.write("<div style = \"border: 1px solid blue; background-color:yellow; width:30%; height:200px; margin:auto; text-align:center; padding-top: 150px; font-size:2rem;\">");
+		document.write("<p1 style=\"color: red;\"> bonjour </p1>"+"<p2 style=\"color:blue;\">"+ prenom + "</p2> <p3>"+nom+"</p3>");
+		document.write("</div>");
+	}
+	function fun3()
+	{
+	var age = Number(prompt("donnez votre age"));
+		if (age >=120 || age <=0)
+			alert("age invalide");
+		else
+			alert("age valide");
+	}
+
+	function fun4() {
+
+	var color = prompt("entrez une couleur");
+
+		if (color === "bleu" || color ==="BLEU") 
+			document.bgColor="blue";
+
+		else if(color ==="vert" ||color ==="VERT")
+			document.bgColor="green";
+
+		else if(color === "rouge" || color === "ROUGE")
+			document.bgColor="red";	
+	 	else
+	 	alert("error: couleur non reconnue");
+	}
+	function fun5()
+	{
+		var color = prompt("entrez une couleur");
+
+		switch(color)
+		{
+			case "vert": document.bgColor="green";
+			break;
+			case "VERT": document.bgColor="green";
+			break;
+			case "bleu": document.bgColor="blue";
+			break;
+			case "BLEU": document.bgColor="blue";
+			break;
+			case "rouge": document.bgColor="red";
+			break;
+			case "ROUGE": document.bgColor="red";
+			break;
+			case "violet": document.bgColor="purple";
+			break;
+			case "VIOLET": document.bgColor="purple";
+			break;
+			case "blouge": document.bgColor="black";
+			break;
+			case "BLOUGE": document.bgColor="black";
+			break;			default: document.bgColor="yellow";
+		}
+	}
+</script>
+	<button onclick="fun1()">exo 1</button>
+	<button onclick="fun2()">exo 2</button>
+	<button onclick="fun3()">exo 3</button>
+	<button onclick="fun4()">exo 4</button>
+	<button onclick="fun5()">exo 5</button>
+
+</body>
+</html>
