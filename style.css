@@ -126,7 +126,7 @@ nav > ul > li:hover a
 }
 .menu-javascript:hover
 {
-	border-top: 5px solid rgb(51, 150, 100);
+	border-top: 5px solid #339664;
 	background-color: rgba(31, 121, 109, 0.15);
 }
 .menu-javascript .submenu
