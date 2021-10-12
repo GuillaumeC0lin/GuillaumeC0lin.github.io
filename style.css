@@ -124,6 +124,19 @@ nav > ul > li:hover a
 {
 	background-color: rgb(160, 220, 105);
 }
+.menu-javascript:hover
+{
+	border-top: 5px solid #f1dc4f;
+	background-color: rgba(31, 121, 109, 0.15);
+}
+.menu-javascript .submenu
+{
+	background-color: rgb(51, 150, 100);
+}
+.menu-javascript .submenu li:hover
+{
+	background-color: rgb(51, 150, 100);
+}
 
 .submenu li:hover
 {
