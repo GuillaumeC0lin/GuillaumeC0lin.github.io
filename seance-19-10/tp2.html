@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			td
+			{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<script type="text/javascript">
+				function somme()
+				{
+					var a = Number(document.f1.t1.value)+Number(document.f1.t2.value);
+					alert(a);
+				}
+		</script>
+		<form name="f1">
+			<input type="text" name="t1" width="150px">
+			<input type="text" name="t2" width="150px">
+			<button name="b1" onclick="somme()"> calculer somme</button>
+		</form>
+	</body>
+</html>

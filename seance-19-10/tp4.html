@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			td{border-radius: 50px;border: 1px solid black;margin: 5px 0px 5px 0px;}
+			table{border: 1px solid black;margin: auto; background-color: burlywood;}
+			body{text-align: center;}
+			form{margin: auto;}
+			input{border-radius: 50px;border: 1px solid black; text-align: center; padding-top: 5px; padding-bottom: 5px;}
+		</style>
+		<script type="text/javascript">
+				function somme()
+				{
+					var a = Number(document.getElementById("c2-1").value) * Number(document.getElementById("c3-1").value);
+					var b = Number(document.getElementById("c2-2").value) * Number(document.getElementById("c3-2").value);
+					var c = Number(document.getElementById("c2-3").value) * Number(document.getElementById("c3-3").value);
+					document.getElementById("c4-1").value=(a);
+					document.getElementById("c4-2").value=(b);
+					document.getElementById("c4-3").value=(c);
+					document.getElementById("res").value=(a+b+c);
+				}
+		</script>
+	</head>
+	<body>
+		<form>
+			<h1>facture en Javascript</h1>
+			<table>
+					<tr>
+					<td style="background-color: #FFF;">Article:</td>
+					<td style="background-color: #FFF;">Prix:</td>
+					<td style="background-color: #FFF;">quantité:</td>
+					<td style="background-color: #FFF;">resultat</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" placeholder="entrez un article" id="c1-1" name="t1"><br>
+					</td>
+					<td>
+						<input type="text" placeholder="0" id="c2-1" name="t1"><br>
+
+					</td>
+					<td>
+						<input type="text" placeholder="0" id="c3-1" name="t1"><br>
+					</td>
+					<td>
+						<input type="text" placeholder="0" id="c4-1" name="t1"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" placeholder="entrez un article" id="c1-2" name="t2">
+					</td>
+					<td>
+						<input type="text" placeholder="0" id="c2-2" name="t2">
+					</td>
+					<td>
+						<input type="text" placeholder="0" id="c3-2" name="t2">
+					</td>
+					<td>
+						<input type="text" placeholder="0" id="c4-2" name="t2">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" placeholder="entrez un article" id="c1-3" name="t3">
+					</td>
+					<td>
+						<input type="text" placeholder="0" id="c2-3" name="t3">
+					</td>
+					<td>
+						<input type="text" placeholder="0" id="c3-3" name="t3">
+					</td>
+					<td>
+						<input type="text" placeholder="0" id="c4-3" name="t3">
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+						<input type="reset" value="reinitialiser">
+					</td>
+					<td>
+						<input type="button" name="b1" value="résultat" onclick="somme()">
+					</td>
+					<td>
+					<input type="text" placeholder="0" id="res" name="t3">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
