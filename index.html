@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style2.css">
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale">
-		<title>site programmation</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<title></title>
 	</head>
 	<body>
-		<nav>
-			<label for="menu-mobile" class="menu-mobile">Menu</label>
-			<input type="checkbox" id="menu-mobile" role="button">
-			<ul>
-				<li class="menu-html"><a href="#">HTML</a>
-					<ul class="submenu">
-						<li><a href="site1/p1.html">Développeur Web (design / backend)</a></li>
-						<li><a href="site1/p2.html">developpeur application</a></li>
-						<li><a href="site1/p3.html">administrateur réseau</a></li>
-						<li><a href="site1/p4.html">gestionnaire de base de donnés</a></li>
-						<li><a href="site1/form.html">formulaire</a></li>
-					</ul>
+		<div class="general">
+		<div class="banner-top"></div>
+		<div class="block-left">
+			<nav>
+			<ul class="menu-general">
+				<li class="menu-acc"><a href="#">Accueil</a>	
+					<ul class="sub">
+						<li><a href="PPE/pres.html" target="aff">Présentation</a></li>
+					</ul>			
 				</li>
-					<li class="menu-iframe"><a href="#">iframe</a>
-					<ul class="submenu">
-						<li><a href="tp_iframe/index.html">tp i-frame</a></li>
-					</ul>
-				</li>	
-				<li class="menu-css"><a href="#">tp css</a>
-					<ul class="submenu">
-					<li><a href="TP2_CSS/index.html">tp css</a></li>
-					</ul>
+				<li class="menu-cv"><a href="#">CV</a>
+					<ul class="sub">
+						<li><a href="tp5/cv.html">cv HTML</a></li>
+						<li class="menu-cv"><a href="#">cv PDF</a>
+							<ul class="sub2">
+								<li><a href="pdf/GuillaumeColin-CV.pdf" download>telecharger</a></li>
+								<li><a href="pdf/GuillaumeColin-CV.pdf# toolbar = 0 " target="aff" >consulter</a></li>
+							</ul>
+						</li>
+						<li class="menu-cv"><a href="#">lettre de motivation PDF</a>
+							<ul class="sub3">
+								<li><a href="pdf/GuillaumeColin-LettreMotiv.pdf" download>telecharger</a></li>
+								<li><a href="pdf/GuillaumeColin-LettreMotiv.pdf# toolbar = 0 " target="aff" >consulter</a></li>
+							</ul>
+						</li>
+					</ul>	 
 				</li>
-				<li class="menu-menu"><a href="#">tp menu</a>
-					<ul class="submenu">
-					<li><a href="tpmenu/menu.html">tp menu</a></li>
-					</ul>
-				</li>	
-				<li class="menu-cv"><a href="#">tp cv</a>
-					<ul class="submenu">
-					<li><a href="tp5/cv.html">CV HTML</a></li>
-					</ul>
+				<li class="menu-projet"><a href="#">Projets</a>
+					<ul class="sub">
+						<li><a href="pdf/certsta.pdf# toolbar = 0" target="aff">stages</a></li>
+						<li class="menu-cv"><a href="#">PPE</a>
+							<ul class="sub2">
+								<li><a href="tp5/cv.html" target="aff">CV</a></li>
+								<li><a href=".easter.html" >Portfolio</a></li>
+							</ul>	
+						</li>
+						<li><a href="menug.html">TP</a></li>
+					</ul>	
 				</li>
-				<li class="menu-javascript"><a href="#">tp Javascript</a>
-					<ul class="submenu">
-					<li><a href="tp_js/page.html">tp Javascript</a></li>
+				<li class="menu-veille"><a href="#">Veilles</a>
+					<ul class="sub">
+						<li><a href="pdf/veilletechno.pdf# toolbar = 0" target="aff">Veille technologique</a></li>
+						<li><a href="pdf/veillejuri.pdf# toolbar = 0" target="aff">Veille juridique</a></li>
+					</ul>	 
+				</li>
+				<li class="menu-contact"><a href="#">Contact</a>
+					<ul class="sub">
+						<li><div class="schi"><a href="coord.png" target="aff"> nous contacter<br>(après un vote à la majorité absolue nous avons décidé que nous n'etions pas schizophrène)</a></div></li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
+		</div>
+		<div class="block-right">
+			<iframe src="PPE/pres.html" name="aff" class="affText"></iframe>
+		</div>
+		<div class="banner-foot"></div>
+		</div>
 	</body>
-
 </html>

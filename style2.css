@@ -1,0 +1,178 @@
+.banner-top
+{
+	width:95%;
+	height: 130px;
+	border: 1px solid black;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	margin-left: 2.5%;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.banner-foot
+{
+	width:95%;
+	height: 130px;
+	border: 1px solid black;
+	margin-left: 2.5%;
+	margin-top: 20px;
+	clear: both;
+	background-color: rgba(255,255,255,0.5);
+
+}
+a
+{
+	color: ghostwhite;
+}
+.schi
+{
+	width: 100%;
+	height: 20px;
+	overflow: auto;
+}
+.general
+{
+	border: 2px solid black;
+	width: 95%;
+	padding: 40px 40px 40px 40px;
+}
+body
+{
+	background: url("b3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.block-left
+{
+	width:20%;
+	height: 500px;
+	border: 1px solid black;
+	margin-left: 2.5%;
+	margin-top: 20px;
+	float: left;
+	background-color: rgba(255,255,255,0.5);
+}
+.block-right
+{
+	width:70%;
+	height: 500px;
+	border: 1px solid black;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	float: right;
+	background-color: rgba(255,255,255,0.5);
+
+}
+.affText
+{
+	float: left;
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+	border: 1px solid black;
+	background-color: white;
+}
+.tete
+{
+	margin-top: 25px;
+	margin-left: 10%;
+	float: left;
+	width: 13%;
+	height: 150px;
+	border: 1px solid black;
+	background-color: white;
+}
+nav
+{
+	margin-top: 20%;
+}
+ul
+{
+	list-style: none;
+}
+li
+{
+	border: 1px solid black;
+}
+.sub
+{
+	display: none;
+}
+.sub2
+{
+	display: none;
+}
+.sub3
+{
+	display: none;
+}
+nav > ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+nav li
+{
+	list-style-type: none;
+	background-color: #4e97f9;
+}
+nav > ul > li
+{
+	position: relative;
+	text-align: center;
+	margin: auto;
+	box-shadow: 2px 3px black;
+	width: 30%;
+	margin-top: 2px;
+	background-color: ;
+}
+nav > ul::after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+nav a
+{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav li:hover .sub
+{
+	display: inline-block;
+	position: absolute;
+	background-color: #FFF;
+	top: 50%;
+	left: 100%;
+	padding: 0px;
+	width: 150px;
+	z-index: 100000;
+	box-shadow: 2px 3px black;
+}
+.sub li:hover .sub2
+{
+	display: inline-block;
+	position: absolute;
+	background-color: #FFF;
+	top: 20%;
+	left: 100%;
+	padding: 0px;
+	width: 150px;
+	z-index: 100000;
+	box-shadow: 2px 3px black;
+}
+.sub li:hover .sub3
+{
+	display: inline-block;
+	position: absolute;
+	background-color: #FFF;
+	top: 70%;
+	left: 100%;
+	padding: 0px;
+	width: 150px;
+	z-index: 100000;
+	box-shadow: 2px 3px black;
+}
