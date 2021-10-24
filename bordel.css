@@ -1,0 +1,29 @@
+body
+{
+	background-image: url(b3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+form
+{
+
+	margin: auto;
+	width: 30%;
+	border: 1px solid gold;
+	border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0);
+}
+lab
+{
+	position: relative;
+	top: -5px;
+	left: 5px;
+	border: 1px solid gold;
+	border-radius: 15px;
+	background-color: #FFF;
+}
+
+.hidden_file
+{
+	display: none;
+}

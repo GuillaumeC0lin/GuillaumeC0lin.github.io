@@ -1,0 +1,309 @@
+.iblock
+{
+border: 1px solid black;
+border-radius: 100%;
+width: 100px;
+height: 100px;
+float: left;
+margin: 20px 5px 5px 5px;
+}
+.blockl input
+{
+	height: 20px;
+}
+.h
+{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-size: 20px;
+	height: 20px;
+}
+.h2
+{
+	margin-top: 1%;
+	margin-bottom: 3%;
+}
+img
+{
+border-radius: 100%;
+width: 100px;
+height: 100px;
+float: left;
+}
+.non
+{
+	width: 60%;
+	margin: 1% 20% 1% 20%;
+	padding: 5% 0% 5% 0%;
+	border: none;
+	border-bottom: 1px solid black;
+}
+.a
+{
+	height: 25px;
+	font-size: 24px;
+}
+.blockl
+{
+float: left;
+margin: 20px 5px 5px 5px;
+}
+.contr
+{
+width: 200px;
+height: 50px;
+
+}
+.headinf
+{
+	border: 1px solid black;
+	height: 251px;
+	background-color: rgba(230, 230, 230, 0.5);
+}
+.pai
+{
+	width: 45%;
+ 	margin-right: 2%;
+ 	min-height: 30px;
+ 	max-height: 30px;
+ 	min-width: 45%;
+ 	max-width: 45%;
+}
+.tete
+{
+	border-bottom: 1px solid grey;
+	color: blue;
+	font-size: 20px;
+	font-weight: bold;
+	width: 90%;
+	margin: auto;
+	padding: 5px 0px 5px 10px;
+}
+.ligne
+{
+	color: white;
+}
+.red
+{
+	background-color:#ff5500;
+}
+.top
+{
+	border-top: 1px solid black;
+	width: 35%;
+}
+.under
+{
+	position: relative;
+	top: -250px;
+	float:right;
+	margin-top: -1px;
+	margin-right: 10%;
+}
+.red2
+{
+	background-color: rgba(255, 80, 0, 0.3);
+}
+.c1
+{
+	width: 51%;
+	border-bottom: none;
+	border-top: none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.c2
+{
+	width: 13%;
+	border-bottom: none;
+	border-top: none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.c3
+{
+	width: 13%;
+	border-bottom: none;
+	border-top: none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.c4
+{
+	width: 13%;
+	border-bottom: none;
+	border-top: none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.inv
+{
+	border: none;
+	text-align: right;
+	clear: both;
+}
+.blockr
+{
+	font-family: Arial;
+	color: grey;
+	width: 30%;
+	height: 210px;
+	float: right;
+	text-align: center;
+	margin: 20px 5px 5px 5px;
+}
+.blockr input::placeholder
+{
+	text-align: center;
+	color: blue;
+}
+.blockr input
+{
+	text-align: center;
+}
+.livr
+{
+	margin: 30px 2.5% 30px 0%;
+	width: 45%;
+	height: 300px;
+	float: right;
+}
+.dest
+{
+	margin: 30px 2.5% 30px 2.5%;
+	width: 45%;
+	height: 300px;
+	float: left;
+}
+form
+{
+	margin: auto;
+	width: 60%;
+	border: 1px solid black;
+}
+.table1
+{
+	margin: auto;
+	border: 1px solid black;
+	width: 80% ;
+	padding: 0.3% 0.3% 0.3%;
+	border-collapse: collapse;
+}
+.table2
+{
+	position: relative;
+	top: -250px;
+	right: 0%;
+	width: 80%;
+	float: right;
+	text-align: right;
+	margin-right: 10%;
+	margin-top: 1%;
+	border-collapse: collapse;
+
+}
+.ll
+{
+	border-bottom: 1px solid black;
+}
+table input
+{
+	text-align: right;
+}
+input
+{
+	width: 99.5%;
+	background-color: rgba(0, 0, 0, 0);
+}
+.empty
+{
+	border-bottom: none;
+	border: none;
+}
+.empty2
+{
+	border-bottom: 1px black;
+	border-top: 1px black;
+	border-left: none;
+	border-right: none;
+}
+.empty3
+{
+	width: 70%;
+	border-bottom: 1px black;
+	border-top: 1px black;
+	border-left: none;
+	border-right: none;
+}
+.empty input
+{
+	border: none;
+}
+.sep
+{
+	border-bottom: 1px solid black;
+	width: 14%;
+	border-left: none;
+	border-right: none;
+}
+.sep2
+{
+	border-bottom: none;
+	width: 14%;
+	border-left: none;
+	border-right: none;
+}
+footer
+{
+	clear: both;
+}
+.white input
+{
+	background-color: rgba(230, 230, 230, 0.5);
+}
+
+.rest
+{
+	width: 20%;
+	height: 160px;
+	float: right;
+	text-align: right;
+	margin-right: 10%;
+	margin-top: -1px;
+	border-collapse: collapse;
+	border-top: 1px solid black;
+}
+.remplir
+{
+	width: 100%;
+	height: 150px;
+	float: right;
+	text-align: right;
+	border-collapse: collapse;
+}
+.remplir2
+{
+	width: 50%;
+	float: left;
+	text-align: right;
+	border-collapse: collapse;
+}
+.remarques
+{
+ 	margin-left: 2%;
+ 	min-height: 250px;
+ 	max-height: 250px;
+ 	min-width: 50%;
+ 	max-width: 50%;
+ 	float: left;
+	position: relative;
+	top: 0%;
+	left: 0%;
+	border: none;
+}
+.left
+{
+	text-align: left;
+	margin-left: 2%;
+	margin-bottom: -5px;
+}
