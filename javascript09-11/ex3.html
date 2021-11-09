@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function connect()
+			{
+				a = prompt("entrez votre identifiant:\n");
+				b = prompt("entrez votre mot de passe:\n");
+
+				if(a != "admin_GSB" || b != "admin")
+					alert("mot de passe ou identifiant incorrect");
+				else
+					alert("connexion réussie");
+			}
+		</script>
+		<form name="f">
+			<input type="button" value="connexion" onclick="connect()">
+		</form>
+	</body>
+</html>
