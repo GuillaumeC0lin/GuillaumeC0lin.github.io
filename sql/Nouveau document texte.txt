@@ -1,0 +1,47 @@
+SELECT * 
+FROM `voiture` 
+WHERE `couleur` = 'noir'
+LIMIT 0 , 30
+
+
+__________________________________
+
+SELECT * 
+FROM `client` 
+WHERE `ville` = 'paris'
+LIMIT 0 , 30
+
+__________________________________
+
+SELECT `immatriculation` , `marque` 
+FROM `voiture` 
+WHERE `couleur` = 'noir'
+LIMIT 0 , 30
+
+__________________________________
+SELECT * 
+FROM `voiture` 
+WHERE `kilometrage` <10000
+LIMIT 0 , 30
+
+__________________________________
+
+SELECT * 
+FROM `voiture` 
+WHERE `marque` = 'mercedes'
+LIMIT 0 , 30
+__________________________________
+
+SELECT `date_location` 
+FROM `location` 
+WHERE `code_client` = 'T200'
+LIMIT 0 , 30
+
+__________________________________
+
+
+SELECT `id_location` , `date_location` 
+FROM `location` 
+WHERE `immatriculation` = '22TU2000'
+LIMIT 0 , 30
+
