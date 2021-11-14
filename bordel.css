@@ -22,7 +22,15 @@ lab
 	border-radius: 15px;
 	background-color: #FFF;
 }
+.outputdiv
+{
 
+	margin: auto;
+	width: 90%;
+	border: none;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0);
+}
 .hidden_file
 {
 	display: none;
