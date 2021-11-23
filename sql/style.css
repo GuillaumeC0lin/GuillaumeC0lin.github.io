@@ -1,0 +1,35 @@
+div
+{
+	float: left;
+	width:98%;
+	min-height: 150px;
+	border: 1px solid gold;
+	border-radius: 15px;
+	margin: 1% 1% 1% 1%;
+}
+.sql_select
+{
+	width: 20%;
+	height: 620px;
+}
+.aff
+{
+	float: right;
+	width: 75%;
+}
+iframe
+{
+	width: 98%;
+	height: 600px;
+	margin: 10px 5px 5px 15px;
+}
+body
+{
+	background-image: url(../b3.png);
+	background-position: top left, left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Verdana, Calibri, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}

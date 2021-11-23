@@ -100,6 +100,16 @@ nav li:hover .submenu
 	border-top: 5px solid rgb(130, 190, 75);
 	background-color: rgba(130, 190, 75,0.15);
 }
+.menu-sq:hover
+{
+	border-top: 5px solid rgb(190, 130, 75);
+	background-color: rgba(190, 130, 75,0.15);
+}
+.menu-ppe:hover
+{
+	border-top: 5px solid rgb(190, 60, 190);
+	background-color: rgba(190, 60, 190,0.15);
+}
 nav > ul > li:hover a
 {
 	padding: 15px 30px 20px 30px;
@@ -123,6 +133,14 @@ nav > ul > li:hover a
 .menu-cv .submenu
 {
 	background-color: rgb(160, 220, 105);
+}
+.menu-sq .submenu
+{
+	background-color: rgb(190, 130 , 75);
+}
+.menu-ppe .submenu
+{
+	background-color: rgb(190, 60, 190);
 }
 .menu-javascript:hover
 {
@@ -162,6 +180,14 @@ nav > ul > li:hover a
 .menu-cv .submenu li:hover
 {
 	background-color: rgb(130, 190, 75);
+}
+.menu-sq .submenu li:hover
+{
+	background-color: rgb(190, 130, 75);
+}
+.menu-ppe .submenu li:hover
+{
+	background-color: rgb(190, 60, 190);
 }
 nav input[type=checkbox]:checked ~ ul
 {

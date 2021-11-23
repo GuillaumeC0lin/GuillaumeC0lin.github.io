@@ -1,0 +1,34 @@
+CREATE TABLE réparation
+(
+  Num_reparation int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  Date_reparation date ,
+  Duree_reparation varchar(20) ,
+  Cout_reparation int(11) ,
+  Responsable_rep varchar(20) ,
+  Id_Voiture varchar(20) KEY ,
+)
+
+SELECT * FROM `voiture`
+SELECT * FROM `voiture` ORDER BY `immatriculation`
+SELECT * FROM `voiture` ORDER BY `marque`, `modèle`
+SELECT * FROM `voiture` WHERE marque = "tesla"
+SELECT UPPER( `marque` ) , UPPER( `modèle` ) FROM `voiture` WHERE marque = "tesla"
+ALTER TABLE `voitures` ADD `prix_achat` int
+SELECT * FROM `voiture` WHERE prix_achat BETWEEN 15000 AND 20000 
+SELECT * FROM `voiture` WHERE prix_achat > 15000 AND prix_achat < 20000 
+SELECT AVG( kilometrage ) FROM `voiture` WHERE `marque` = "mercedes"
+SELECT COUNT(*) FROM `voiture` WHERE `marque` = "tesla"
+SELECT COUNT(*) FROM `voiture` WHERE `couleur` = "noir"
+SELECT `marque` , COUNT( * ) FROM `voiture` GROUP BY `marque`
+SELECT MAX( kilometrage ) FROM `voiture` 
+SELECT `marque`, `kilometrage`, `modèle` WHERE kilometrage = MAX( kilometrage )
+SELECT `marque` , `kilometrage` , `modèle` FROM `voiture` WHERE kilometrage = ( SELECT MAX( `kilometrage` ) FROM `voiture` ) 
+SELECT `marque` , `kilometrage` , `modèle` FROM `voiture` WHERE kilometrage = ( SELECT MIN( `kilometrage` ) FROM `voiture` ) 
+SELECT * FROM `client` WHERE `ville` = "paris" OR "Nice"
+SELECT SUM(`prix_achat`) FROM `voiture` WHERE `marque` = "mercedes"
+SELECT `code_client`,`ville` FROM `client` WHERE LEFT(`nom_prenom`,1) = "A" || SELECT `code_client`,`ville` FROM `client` WHERE `nom_prenom` LIKE "C%"
+
+INSERT INTO `voiture` (`immatriculation`, `marque`, `modèle`, `kilometrage`, `carburant`, `couleur`, `nb_place`, `nb_portes`, `etat`,`prix_achat`) VALUES ('18 etf 65', 'suzuki', 'swift modele 3', 3858, 'essence', 'bleu', 5, 5, 'bon','6500'), ('22 TU 2000', 'mercedes', 'AMG', 20000, 'essence', 'noir', 5, 5, 'bon etat','14500'), ('AC 666 DC', 'tesla', 'cybertruck', 42, 'electrique', 'chrome', 5, 4, 'parfait','65000');
+
+INSERT INTO `location` (`id_location`, `duree_location`, `date_location`, `prix_location`, `code_client`, `immatriculation`) VALUES ('LOC200', '5jours', '2021-11-09', '400', 'T200', 'BT 264 JS'), ('LOC201', '5jours', '2021-11-09', '100', 'T201', '18 etf 65');
+
