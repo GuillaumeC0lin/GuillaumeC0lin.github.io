@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="qcm.css">
+	</head>
+	<body>
+						<script type="text/javascript" src = "qcm.js"></script>
+		<form>
+			<ul>
+				<p>Question 1 Un chemin absolu...</p> <input type="text" name="rep" id ="rep1" class ="caché">
+		
+				<li><input type="checkbox"  name="q1-1" id="q1-1" class="q" > A) doit commencer par « . » ou « .. » </li>
+				<li><input type="checkbox"  name="q1-2" id="q1-2" class="q"> B) peut commencer par « . » ou « .. » </li>
+				<li><input type="checkbox"  name="q1-3" id="q1-3" class="q"> C) doit commencer par « / » </li>
+				<li><input type="checkbox"  name="q1-4" id="q1-4" class="q"> D) peut commencer par « / » </li>
+		
+				<p>Question 2 Un chemin relatif...</p> <input type="text" name="rep" id ="rep2" class ="caché">
+		
+				<li><input type="checkbox"  name="q2-1" id="q2-1" class="q"> A) doit commencer par « . » ou « .. » </li>
+				<li><input type="checkbox"  name="q2-2" id="q2-2" class="q"> B) peut commencer par « . » ou « .. » </li>
+				<li><input type="checkbox"  name="q2-3" id="q2-3" class="q"> C) doit commencer par « / » </li>
+				<li><input type="checkbox"  name="q2-4" id="q2-4" class="q"> D) peut commencer par « / » </li>
+		
+				<p>Question 3  On réalise un appel à access("./toto.txt", R_OK | W_OK), la fonction retourne
+				-1, et errno est positionné à EACCES. Quelles sont les explications possibles ?</p> <input type="text" name="rep" id ="rep3" class ="caché">
+				<li><input type="checkbox"  name="q3-1" id="q3-1" class="q"> A) le fichier toto.txt existe mais n’est pas accessible en écriture </li>
+				<li><input type="checkbox"  name="q3-2" id="q3-2" class="q"> B) le fichier toto.txt n’existe pas </li>
+				<li><input type="checkbox"  name="q3-3" id="q3-3" class="q"> C) le fichier toto.txt existe mais n’est pas accessible en lecture </li>
+		
+				<p>Question 4 On exécute les commandes suivantes :
+				$ ls
+				$ ln -s file file
+				$ cat file
+				cat: file: Trop de niveaux de liens symboliques
+				Que peut-on en conclure ?</p> <input type="text" name="rep" id ="rep4" class ="caché">
+				<li><input type="checkbox"  name="q4-1" id="q4-1" class="q"> A) un cycle empêche de trouver une cible de lien symbolique </li>
+				<li><input type="checkbox"  name="q4-2" id="q4-2" class="q"> B) file est un mot réservé, ne peut être utilisé pour un lien symbolique </li>
+				<li><input type="checkbox"  name="q4-3" id="q4-3" class="q"> C) il n’y a plus de place sur le disque </li>
+		
+				<p>Question 5  Que peut-on conclure de :
+				$ mkdir rep/sousrep
+				mkdir: impossible de créer le répertoire « rep/sousrep »: Aucun fichier ou dossier de ce type</p> <input type="text" name="rep" id ="rep5" class ="caché">
+		
+				<li><input type="checkbox"  name="q5-1" id="q5-1" class="q"> A) le répertoire rep/sousrep existe déjà </li>
+				<li><input type="checkbox"  name="q5-2" id="q5-2" class="q"> B) le disque est plein </li>
+				<li><input type="checkbox"  name="q5-3" id="q5-3" class="q"> C) je n’ai pas les droits nécessaires pour créer un répertoire </li>
+				<li><input type="checkbox"  name="q5-4" id="q5-4" class="q"> D) le répertoire rep n’existe pas </li>
+				<li><input type="checkbox"  name="q5-5" id="q5-5" class="q"> E) le répertoire rep existe déjà </li>
+		
+				<p>Question 6  On considère la session suivante :
+				$ ls -l file42
+				---x------ 1 ray mond 8496 oct 11 09:32 file42
+				Quelles sont les affirmations correctes :</p> <input type="text" name="rep" id ="rep6" class ="caché">
+		
+				<li><input type="checkbox"  name="q6-1" id="q6-1" class="q"> A) le fichier file42 est un lien symbolique </li>
+				<li><input type="checkbox"  name="q6-2" id="q6-2" class="q"> B) le propriétaire du fichier file42 a le droit de l’exécuter </li>
+				<li><input type="checkbox"  name="q6-3" id="q6-3" class="q"> C) la première ligne du fichier file42 contient la sous-chaîne de caractères "42" </li>
+				<li><input type="checkbox"  name="q6-4" id="q6-4" class="q"> D) le propriétaire du fichier file42 a le droit d’en lire le contenu </li>
+				<br><br>
+				<table>2) Données d’Alice:<br>
+		
+				Dans les questions de cette section, on considère l’arborescence suivante.
+				<tr><td></td><td>st_size</td><td>st_blocks</td>
+				<tr><td>/home/alice</td><td> 4096</td><td> 8</td>
+				<tr><td>|__ fic</td><td> 1</td><td> 8</td>
+				<tr><td>|__ rep</td><td> 4096</td><td> 8</td>
+				<tr><td><tab></tab>|__ fic</td><td> 2</td><td> 8</td>
+				<tr><td><tab></tab>|__ liensym -> fic</td><td> 3</td><td> 0</td>
+				<tr><td><tab></tab>|__ sousrep</td><td> 4096</td> <td>8</td>
+				<tr><td><tab></tab>|<tab></tab>|__ fic</td><td> 4</td><td> 8</td>
+				<tr><td><tab></tab>|<tab></tab>|__ soussous</td><td> 4096</td><td> 8</td>
+				<tr><td><tab></tab>|<tab></tab>|<tab></tab>|__ fic</td><td> 5</td><td> 8</td>
+				<tr><td><tab></tab>|<tab></tab>|__ sym -> ../sousrep2</td><td> 11</td><td> 0</td>
+				<tr><td><tab></tab>|__ sousrep2</td><td> 4096</td> <td>8</td>
+				<tr><td><tab></tab><tab></tab>|__ rome</td><td> 6</td><td> 8</td>
+				        </tr>
+				</table>
+		
+				<p>Question 7  On suppose que le répertoire courant est /home/alice/rep. Parmi les chemins
+				suivants, lesquels menent à « rome » ?</p> <input type="text" name="rep" id ="rep7" class ="caché">
+		
+				<li><input type="checkbox"  name="q7-1" id="q7-1" class="q"> A) /home/alice/sousrep/rome </li>
+				<li><input type="checkbox"  name="q7-2" id="q7-2" class="q"> B) sousrep2/rome </li>
+				<li><input type="checkbox"  name="q7-3" id="q7-3" class="q"> C) ../rep/sousrep2/rome </li>
+				<li><input type="checkbox"  name="q7-4" id="q7-4" class="q"> D) fic/../sousrep2/rome </li>
+				<li><input type="checkbox"  name="q7-5" id="q7-5" class="q"> E) liensym/sousrep2/rome </li>
+				<li><input type="checkbox"  name="q7-6" id="q7-6" class="q"> F) /home/alice/rep/sousrep2/rome </li>
+				<li><input type="checkbox"  name="q7-7" id="q7-7" class="q"> G) sousrep/sym/rome </li>
+				<li><input type="checkbox"  name="q7-8" id="q7-8" class="q"> H) sousrep/../rome </li>
+		
+				<p>Question 8  On suppose que le répertoire courant est /home/alice/rep/sousrep. Quelles
+				sont les affirmations correctes parmi les suivantes ?</p> <input type="text" name="rep" id ="rep8" class ="caché">
+		
+				<li><input type="checkbox"  name="q8-1" id="q8-1" class="q"> A) après un appel à stat("sym", &st), st.st_size vaut 11 </li>
+				<li><input type="checkbox"  name="q8-2" id="q8-2" class="q"> B) après un appel à lstat("sym", &st), st.st_size vaut 11 </li>
+				<li><input type="checkbox"  name="q8-3" id="q8-3" class="q"> C) après un appel à stat("sym", &st), st.st_size vaut 4096 </li>
+				<li><input type="checkbox"  name="q8-4" id="q8-4" class="q"> D) après un appel à lstat("sym", &st), st.st_size vaut 4096 </li>
+		
+				<p>Question 9 dans le répertoire /home/alice/rep, après l’exécution de rm fic,	lstat("liensym", &st)...</p> <input type="text" name="rep" id ="rep9" class ="caché">
+		
+				<li><input type="checkbox"  name="q9-1" id="q9-1" class="q"> A) ... positionne errno à ENOENT </li>
+				<li><input type="checkbox"  name="q9-2" id="q9-2" class="q"> B) ... retourne 0 </li>
+				<li><input type="checkbox"  name="q9-3" id="q9-3" class="q"> C) ... positionne errno à EACCES </li>
+				<li><input type="checkbox"  name="q9-4" id="q9-4" class="q"> D) ... retourne -1 </li>
+		
+				<p>Question 10  On suppose que le répertoire courant est /home/alice/rep. Après l’exécution
+				de rm fic, stat("liensym",&st)...</p> <input type="text" name="rep" id ="rep0" class ="caché">
+		
+				<li><input type="checkbox"  name="q0-1" id="q0-1" class="q"> A) ... positionne errno à EACCES </li>
+				<li><input type="checkbox"  name="q0-2" id="q0-2" class="q"> B) ... positionne errno à ENOENT </li>
+				<li><input type="checkbox"  name="q0-3" id="q0-3" class="q"> C) ... retourne -1 </li>
+				<li><input type="checkbox"  name="q0-4" id="q0-4" class="q"> D) ... retourne 0 </li>
+			</ul>
+			<div class="buttonfin">
+				<input type="reset" name="annuler" value="annuler">
+				<input type="button" name="correction" onclick="corection()" value = "correction">
+				<input type="button" name="corrigé" value = "corrigé" onclick="corrig()">
+			</div>
+		</form>
+	</body>
+</html>
