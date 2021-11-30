@@ -1,0 +1,11 @@
+1) UPDATE voiture set `kilometrage` = 10000
+2) UPDATE voiture set `prix_achat` = 45800 WHERE `marque` = "tesla"
+3) UPDATE client set `adresse` = "21 avenue de strasbourg" WHERE `nom_prenom` LIKE "%smith"
+4) SELECT V.marque,L.code_client FROM voiture V JOIN location L ON V.immatriculation = L.immatriculation WHERE `code_client` = "t200"
+5) SELECT C.adresse, C.nom_prenom FROM location L JOIN client c ON L.code_client = c.code_client WHERE `immatriculation` = "22 tu 2000"
+6) SELECT V.immatriculation, V.kilometrage FROM voiture V JOIN location L ON L.immatriculation = V.immatriculation WHERE `prix_location` <7000
+7) SELECT V.immatriculation, V.modèle, V.marque FROM voiture V JOIN location L ON L.immatriculation = V.immatriculation WHERE YEAR(`date_location`) = 2021 AND MONTH(`date_location`) = 11
+8) SELECT C.nom_prenom,C.adresse FROM client C JOIN location L on L.code_client = C.code_client JOIN voiture V ON L.immatriculation = V.immatriculation  WHERE V.modèle = "tesla"
+9) DELETE FROM voiture WHERE `marque`= "audi"
+10) ALTER TABLE client DROP `ode_postal
+11) SELECT `nom_prenom` FROM client WHERE UPPER(`nom_prenom`) LIKE "C%" UNION SELECT marque FROM voiture WHERE UPPER(`marque`) LIKE "T%"
