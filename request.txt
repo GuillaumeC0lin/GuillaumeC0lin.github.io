@@ -1,0 +1,16 @@
+1)
+ SELECT SUM( `population_2010` ) FROM `commune` 
+2)
+ SELECT COUNT( `code_commune` ) FROM `commune` WHERE `num_departement` = '91'
+3)
+ SELECT `Nom_commune` , `population_2010` FROM `commune` ORDER BY `Surface` ASC LIMIT 2 
+4)
+ SELECT `Nom_commune` , `population_2010` FROM `commune` ORDER BY `population_2010` ASC LIMIT 2
+5)
+ SELECT `Nom_commune` , `population_2010` / `Surface` AS `densite` FROM `commune` WHERE `code_region` = 'IDF' ORDER BY `densite` DESC LIMIT 2 
+6)
+ SELECT num_departement, COUNT( `code_commune` ) AS nb_communes FROM `commune` GROUP BY `num_departement` 
+7)
+ SELECT `num_departement` , SUM( `population_2010` ) AS `population` FROM `commune` GROUP BY `num_departement` HAVING `population` >100000 ORDER BY `population` DESC 
+8)
+ SELECT `nom_departement` , `nom_region` FROM `departements` JOIN `regions` ON `departements`.`code_region` = `regions`.`code_region` 
