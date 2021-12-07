@@ -1,5 +1,10 @@
-<?php 
-$a=$_REQUEST['t1'];
-$b=$_REQUEST['t2'];
-print $a+$b;
-?>
+<html>
+<body>
+<form action="test2.php" method="get">
+Nombre 1: <input type="text" name="t1"><br>
+Nombre 2: <input type="text" name="t2"><br>
+ 
+ <input type="submit" value="Calculer!">
+</form>
+</body>
+</html>
