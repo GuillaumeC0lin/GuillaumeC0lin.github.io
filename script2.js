@@ -12,6 +12,8 @@ function check()
 			document.getElementById("a2").className =("show");
 			document.getElementById("a3").className =("show");
                         document.getElementById("a4").className =("show");
+			document.getElementById("a5").className =("show");
+
 		}
 		else
 		{
