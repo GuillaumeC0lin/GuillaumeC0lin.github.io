@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<style type="text/css">
+			table
+			{
+				border: none;
+			}	
+		</style>
+	</head>
+	<body>
+		<form action="test.php" method="get">
+			<table>
+				<tr>
+					<td>
+						Note 1: <input type="text" name="t1"><br>
+					</td>
+					<td>
+						coeff 1: <input type="text" name="c1"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Note 2: <input type="text" name="t2"><br>
+					</td>
+					<td>
+						coeff 2: <input type="text" name="c2"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Note 3: <input type="text" name="t3"><br>
+					</td>
+					<td>
+						coeff 3: <input type="text" name="c3"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Note 4: <input type="text" name="t4"><br>
+					</td>
+					<td>
+						coeff 4: <input type="text" name="c4"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Note 5: <input type="text" name="t5"><br>
+					</td>
+					<td>
+						coeff 5: <input type="text" name="c5"><br>
+					</td>
+				</tr>
+			</table>
+		<input type="submit" value="Calculer!">
+	</form>
+</body>
+</html>
