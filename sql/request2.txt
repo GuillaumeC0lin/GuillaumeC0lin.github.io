@@ -1,0 +1,111 @@
+SELECT * 
+FROM `employee`
+
+SELECT `NomEmp` 
+FROM `employee`
+
+SELECT * 
+FROM `employee` 
+WHERE `DateEmb` LIKE "%99"
+
+SELECT `NumEmp`,`NomEmp` 
+FROM `employee`
+WHERE `NomEmp` LIKE "C%"
+
+SELECT `NumEmp`,`NomEmp` 
+FROM `employee` 
+ORDER BY `NomEmp` DESC
+
+SELECT SUBSTR( `DateEmb` , 7, 2 ) as `année`,COUNT( `NumEmp` ) as `nombre` 
+FROM `employee` 
+GROUP BY SUBSTR( `DateEmb` , 7, 2 )
+
+SELECT SUBSTR( `DateEmb` , 7, 2 ) AS `année` , COUNT( `NumEmp` ) AS `nombre` 
+FROM `employee` WHERE LENGTH( `NomEmp` ) >5 
+GROUP BY SUBSTR( `DateEmb` , 7, 2 )
+
+SELECT SUBSTR( `DateEmb` , 7, 2 ) AS `année` ,
+COUNT( `NumEmp` ) AS `nombre` 
+FROM `employee` 
+WHERE `NomEmp` LIKE "L%" OR `NomEmp` LIKE "C%"
+GROUP BY SUBSTR( `DateEmb` , 7, 2 )
+HAVING COUNT( `NumEmp` ) > 1
+
+//___________________________________________________________________________________________________________________________________________________________________\\
+
+SELECT `Poste` 
+FROM `poste` 
+GROUP BY `Poste`
+
+SELECT `Poste`,`Salaire` 
+FROM `poste` 
+WHERE `Salaire` >= 3000
+
+SELECT `Poste`,`Salaire` 
+FROM `poste` 
+ORDER BY `Poste` DESC, `Salaire` ASC
+
+SELECT `Poste` , `Salaire` 
+FROM `poste` 
+WHERE `Salaire` = ( SELECT MIN( `Salaire` ) 
+		    FROM `poste` ) 
+
+SELECT AVG(`Salaire`)
+FROM `poste`
+
+SELECT AVG(`Salaire`) 
+FROM `poste` 
+WHERE `DateFin` LIKE ""
+
+SELECT COUNT(`Salaire`) 
+FROM `poste` 
+WHERE `Salaire` > 3000
+
+SELECT `NumServ`,AVG(`Salaire`) 
+FROM `poste` 
+WHERE `DateFin` LIKE "" 
+GROUP BY `NumServ`
+
+SELECT `Poste`,AVG(`Salaire`) , COUNT(`Salaire`)
+FROM `poste` 
+GROUP BY `Poste` 
+HAVING COUNT(`Salaire`) > 1
+
+//___________________________________________________________________________________________________________________________________________________________________\\
+
+
+SELECT `SEXE`, AVG(`POIDS`)
+FROM `etudiant` 
+GROUP BY `SEXE`
+
+SELECT `SEXE` , AVG( `POIDS` ) , 2021 - YEAR(`DATENAISSANCE`) 
+FROM `etudiant` 
+GROUP BY `SEXE` , YEAR( `DATENAISSANCE` )
+
+SELECT `SEXE` , AVG( `POIDS` ) , 2021 - YEAR(`DATENAISSANCE`),`ANNEE`
+FROM `etudiant` 
+GROUP BY `ANNEE`, `SEXE` , YEAR( `DATENAISSANCE` )
+
+SELECT `SEXE` , AVG( `POIDS` ) , 2021 - YEAR(`DATENAISSANCE`),`ANNEE`
+FROM `etudiant` 
+GROUP BY `SEXE`, `ANNEE`, YEAR( `DATENAISSANCE` )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
