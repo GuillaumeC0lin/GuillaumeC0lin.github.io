@@ -1,0 +1,42 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.9.2
+-- http://www.phpmyadmin.net
+--
+-- Serveur: 127.0.0.1
+-- Généré le : Mar 04 Janvier 2022 à 17:31
+-- Version du serveur: 5.5.10
+-- Version de PHP: 5.3.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Base de données: `scolaritee`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `eleve`
+--
+
+CREATE TABLE IF NOT EXISTS `eleve` (
+  `nom élève` varchar(20) NOT NULL,
+  `num élève` int(11) NOT NULL,
+  `adresse` varchar(20) NOT NULL,
+  `numtel` varchar(12) NOT NULL,
+  `civilité` varchar(20) NOT NULL,
+  PRIMARY KEY (`num élève`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `eleve`
+--
+
+INSERT INTO `eleve` (`nom élève`, `num élève`, `adresse`, `numtel`, `civilité`) VALUES
+('colin', 13, '5 allée de la pépini', '0695443362', 'M');
