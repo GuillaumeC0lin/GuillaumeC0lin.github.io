@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+			<form action="inscript.php" method ="post">
+				<p>entrez le nom : <input type="text" name="Nom"></p>
+				<p>entrez le prénom : <input type="text" name="Pnom"></p>
+				<p>entrez l'adresse' : <input type="text" name="Adr"></p>
+				<p>entrez un mot de passe : <input type="password" name="Pass"></p>
+				<p>confirmez le mot de passe : <input type="password" name="Pass2"></p>
+				<p>entrez le num de CIN : <input type="text" name="Cin"></p>
+
+
+				<p>faite votre choix de catalogue : Mer<input type="radio" name="Cata" value="Mer">  Montagne<input type="radio" name="Cata" value="Mon"></p>
+				<br>
+				<input type="reset" name="reset">
+				<input type="submit" name="valider">
+			</form>
+		</body>
+		</html>

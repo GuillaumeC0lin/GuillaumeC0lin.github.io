@@ -1,0 +1,24 @@
+<?php
+mysql_connect("localhost","root","");
+mysql_select_db("gestion_client");
+
+$a = $_POST['Nom'];
+$b = $_POST['Pnom'];
+$c = $_POST['Adr'];
+$d = $_POST['Pass'];
+$e = $_POST['Pass2'];
+$f = $_POST['Cin'];
+$g = $_POST['Cata'];
+
+if ($d != $e)
+{
+	echo "<p> les deux mots de passes sont differents</p>";
+}
+else
+{
+$req1 = "INSERT INTO `client` VALUES('$a','$b','$c','$d','$f','$g')";
+mysql_query($req1);
+echo "<p align='center'><b><font size='7' color='#ff3399' face='Kunstler Script'> L'enregistrement a été effectué </font></b></p>";
+}
+mysql_close();
+?>

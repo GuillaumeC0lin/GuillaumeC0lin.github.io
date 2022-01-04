@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+			<form action="inscript.php" method ="post">
+				<p>entrez le numero : <input type="text" name="Num"></p>
+				<p>entrez le nom : <input type="text" name="Nom"></p>
+				<p>entrez l'adresse' : <input type="text" name="Adr"></p>
+				<p>entrez le num de telephone : <input type="text" name="NumT"></p>
+				<p>civilité : M<input type="radio" name="Civil" value="M" id ="civi1">  Mme<input type="radio" name="Civil" value="Mme" id ="civi2"></p>
+				<br>
+				<input type="reset" name="reset">
+				<input type="submit" name="valider">
+			</form>
+		</body>
+		</html>

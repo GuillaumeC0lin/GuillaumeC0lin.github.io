@@ -1,0 +1,16 @@
+<?php
+mysql_connect("localhost","root","");
+mysql_select_db("scolaritee");
+
+$a = $_POST['Num'];
+$b = $_POST['Nom'];
+$c = $_POST['NumT'];
+$d = $_POST['Adr'];
+$e = $_POST['Civil'];
+
+$req1 = "INSERT INTO `eleve` VALUES('$b','$a','$d','$c','$e')";
+mysql_query($req1);
+
+echo "<p align='center'><b><font size='7' color='#ff3399' face='Kunstler Script'> L'enregistrement a été effectué </font></b></p>";
+mysql_close();
+?>
