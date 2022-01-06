@@ -233,5 +233,6 @@ nav input[type=checkbox]:checked ~ ul
 {
 	border:1px solid gold;
 	color:white;
+	background-color:gold;
 
 }
