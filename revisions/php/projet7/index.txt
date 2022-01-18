@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="pass.php" method="post">
+
+<p>entrez votre nom <input type="text" name="nom"></p>
+<p>entrez votre mot de passe: <input type="password" name="pwd"></p>
+<input type="submit" name="envoi">
+</form>
+
+</body>
+</html>

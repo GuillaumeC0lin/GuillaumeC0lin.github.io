@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h3>les tableaux numerotes</h3>
+	<?php
+$couleur = array("bleu","blanc","rouge","vert","noir");
+$i=0;
+echo "$couleur[0]  $couleur[4]<br>";
+
+while($i<=4)
+{
+echo "$couleur[$i] ";
+$i++;
+}
+
+$couleur[0]="<br>blanc";
+$i=0;
+while($i<=4)
+{
+echo "$couleur[$i] ";
+$i++;
+}
+?>
+
+</body>
+</html>

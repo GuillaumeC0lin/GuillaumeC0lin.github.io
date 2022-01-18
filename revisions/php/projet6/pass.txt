@@ -1,0 +1,17 @@
+<?php
+$pass = "fighting_gold";
+$nom = $_POST['nom'];
+$test = $_POST['pwd'];
+
+if ($test != $pass)
+{
+	echo("<head><meta charset='utf-8'></head>mot de passe erroné <a href='index.html'>retour</a>");
+}
+else
+{
+	echo "bravo ";
+	echo $nom;
+	echo " tu t'en souviens <a href='index.html'>retour</a>";
+}
+
+?>
